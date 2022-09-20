@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+.body {
+  background-image: url("../background.webp");
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#scoreBox {
+  position: absolute;
+  top: 10px;
+  right: 200px;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: "Exo 2", sans-serif;
+}
+#hiscoreBox {
+  position: absolute;
+  top: 50px;
+  right: 170px;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: "Exo 2", sans-serif;
+}
+#board {
+  background: linear-gradient(rgb(146, 253, 146), yellow);
+  width: 90vmin;
+  height: 92vmin;
+  border: 2px solid black;
+  display: grid;
+  grid-template-rows: repeat(18, 1fr);
+  grid-template-columns: repeat(18, 1fr);
+}
+.head {
+  background: linear-gradient(rgb(197, 243, 137), yellow);
+  border: 2px solid purple;
+  transform: scale(1.02);
+  border-radius: 9px;
+}
+.snake {
+  background: linear-gradient(red, yellow);
+  border: 0.2vmin solid white;
+  border-radius: 12px;
+}
+.food {
+  background: linear-gradient(red, purple);
+  border: 0.2vmin solid black;
+  border-radius: 9px;
+}
